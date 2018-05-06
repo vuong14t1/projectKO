@@ -18,7 +18,7 @@ class CreateActionNewsTable extends Migration
             $table->unsignedInteger('category_id');
             $table->unsignedInteger('picture_id');
             $table->string('title');
-            $table->longText('review')->nullable();
+            $table->longText('preview')->nullable();
             $table->longText('content')->nullable();
             $table->timestamps();
         });
